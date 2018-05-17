@@ -115,6 +115,7 @@ def main():
     args = parser.parse_args()
     my_ocean = Ocean()
     my_ocean.ocean_from_file(filepath=args.in_file)
+
     try:
         with open(args.out_file, 'w') as f:
             my_ocean.print(f)
