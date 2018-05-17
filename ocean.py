@@ -110,7 +110,7 @@ class Ocean:
 def main():
     parser = argparse.ArgumentParser()
     parser.add_argument("--in-file", help='Ocean filepath, else reading from console', default=None)
-    parser.add_argument("--out-file", help='Available arguments: file and stdio', default=None)
+    parser.add_argument("--out-file", help='Output filepath, else writing to console', default=None)
     args = parser.parse_args()
 
     print(args.in_file)
