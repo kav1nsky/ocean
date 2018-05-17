@@ -111,14 +111,10 @@ def main():
     parser = argparse.ArgumentParser()
     parser.add_argument("--in-file", help='Ocean filepath, else reading from console', default=None)
     parser.add_argument("--out-file", help='Output filepath, else writing to console', default=None)
+
     args = parser.parse_args()
-
-    print(args.in_file)
-    print(args.out_file)
-
     my_ocean = Ocean()
     my_ocean.ocean_from_file(filepath=args.in_file)
-
     try:
         with open(args.out_file, 'w') as f:
             my_ocean.print(f)
