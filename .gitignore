@@ -1,0 +1,9 @@
+# Created by .ignore support plugin (hsz.mobi)
+.gitignore
+.idea/
+__init__.py
+console_interface.py
+filename
+Would skip repository ocean/
+oceanout
+oceanout1
